@@ -1,11 +1,7 @@
 import React from "react";
-import { storiesOf } from "@storybook/react";
-
 import { Grommet, Box, Grid, Heading, ResponsiveContext } from "grommet";
-
 import { grommet } from "grommet/themes";
 import { deepMerge } from "grommet/utils";
-
 import "./styles/MyGrid.css"
 
   export default function MyGrid({
