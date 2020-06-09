@@ -1,6 +1,6 @@
 import * as Sentry from "@sentry/browser";
 
-const isLocal = process.env.NODE_ENV === "production";
+const isLocal = process.env.NODE_ENV === "development";
 Sentry.init({dsn: "https://985cd0d21ebc4a039147eafd5fe85595@o399069.ingest.sentry.io/5261818"});
 
 export function initSentry() {

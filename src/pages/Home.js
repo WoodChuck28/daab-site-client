@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import { ListGroup } from "react-bootstrap";
 import { useAppContext } from "../libs/contextLib";
 import "./styles/Home.css";
-import CarouselPage from "../sandbox/Carousel"
+import CarouselPage from "../components/Carousel"
 
 export default function Home() {
   const { isAuthenticated } = useAppContext();

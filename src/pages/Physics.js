@@ -5,8 +5,6 @@ import { useAppContext } from "../libs/contextLib";
 import "./styles/Physics.css";
 
 import ResponsiveGrid from "../components/MyGrid";
-import NewTicker from "../components/TickerStore"
-import StockFetch from "../containers/StockFetch"
 import { Card } from "@material-ui/core";
 
 export default function Physics() {
