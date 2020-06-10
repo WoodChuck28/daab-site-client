@@ -39,7 +39,7 @@ export default function Physics() {
         padding: "5px"}}>
           <h1>Guide to using the physics pages:</h1>
  
-          <ul style={{textAlign: "center"}}>
+          <ul style={{textAlign: "center", background: "#354e01"}}>
             <li><strong style={{fontSize: "18px"}}>1. CB: Link to Collegeboard's unit outline guide. Includes standards, science practices, and I can statements</strong></li>
             <li><strong style={{fontSize: "18px"}}>2. NOTES: Link to comprehensive notes guide with example problems throughout</strong></li>
             <li><strong style={{fontSize: "18px"}}>3. NOTES OUTLINE: Link to fill in the blank notes guide with practice problems</strong></li>
