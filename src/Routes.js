@@ -33,12 +33,12 @@ export default function Routes() {
       <UnauthenticatedRoute exact path="/signup">
         <Signup />
       </UnauthenticatedRoute>
-      <AuthenticatedRoute exact path="/physics">
+      <Route exact path="/Physics">
         <Physics />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/kinematics">
+      </Route>
+      <Route exact path="/Kinematics">
         <Kinematics />
-      </AuthenticatedRoute>
+      </Route>
       <AuthenticatedRoute exact path="/dynamics">
         <Dynamics />
       </AuthenticatedRoute>
