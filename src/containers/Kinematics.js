@@ -5,10 +5,11 @@ import {
   HashRouter
 } from "react-router-dom";
 
-import CollegeBoardFluid from '../containers/CollegeBoardDoc';
-import Notes from '../containers/Notes';
-import Vocabulary from '../containers/Vocabulary';
-import "./styles/Fluids.css";
+import CollegeBoardKine from '../containers/CBKine';
+import NotesKine from '../containers/NotesKine';
+
+import VocabularyKine from '../containers/VocabularyKine';
+import "./styles/Kinematics.css";
 
 
 class Kinematics extends Component {
@@ -17,15 +18,15 @@ class Kinematics extends Component {
         <HashRouter>
         <div>
           <ul className="header">
-          <li><NavLink to="/collegeboard">CB</NavLink></li>
-          <li><NavLink to="/notes">NOTES</NavLink></li>
-          <li><NavLink to="/vocabulary">VOCAB</NavLink></li>
-          <li><NavLink to="/practice">Example Problems</NavLink></li>
+          <li><NavLink to="/collegeboardKine">CB</NavLink></li>
+          <li><NavLink to="/notesKine">NOTES</NavLink></li>
+          <li><NavLink to="/vocabularyKine">VOCAB</NavLink></li>
+          <li><NavLink to="/practiceKine">Example Problems</NavLink></li>
           </ul>
           <div className="content">
-          <Route path="/collegeboard" component={CollegeBoardFluid}/>
-          <Route path="/notes" component={Notes}/>
-          <Route path="/vocabulary" component={Vocabulary}/>
+          <Route path="/collegeboardKine" component={CollegeBoardKine}/>
+          <Route path="/notesKine" component={NotesKine}/>
+          <Route path="/vocabularyKine" component={VocabularyKine}/>
           </div>
         </div>
         </HashRouter>
