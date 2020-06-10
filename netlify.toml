@@ -22,3 +22,8 @@
 # an active Deploy Preview will inherit these settings.
 [context.branch-deploy]
   command = "REACT_APP_STAGE=dev npm run build"
+
+[[redirects]]
+    from    = "/*"
+    to      = "/index.html"
+    status  = 200
