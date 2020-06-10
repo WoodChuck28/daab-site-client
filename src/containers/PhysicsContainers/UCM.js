@@ -16,11 +16,11 @@ class UCM extends Component {
     return (
         <HashRouter>
         <div>
-          <ul className="header">
-          <li><NavLink to="/collegeboardUCM">CB</NavLink></li>
-          <li><NavLink to="/notesUCM">NOTES</NavLink></li>
-          <li><NavLink to="/vocabUCM">VOCAB</NavLink></li>
-          <li><NavLink to="/practiceUCM">Example Problems</NavLink></li>
+          <ul className="header" style={{background: "#001a00"}}>
+          <li><NavLink to="/collegeboardUCM" style={{color: "white"}}>CB</NavLink></li>
+          <li><NavLink to="/notesUCM" style={{color: "white"}}>NOTES</NavLink></li>
+          <li><NavLink to="/vocabUCM" style={{color: "white"}}>VOCAB</NavLink></li>
+          <li><NavLink to="/practiceUCM" style={{color: "white"}}>Example Problems</NavLink></li>
           </ul>
           <div className="content">
           <Route path="/collegeboardUCM" component={CBUCM}/>

@@ -58,6 +58,9 @@ function App() {
             <Nav pullRight>
               {isAuthenticated ? (
                 <>
+                  <LinkContainer to="/physics">
+                    <NavItem>Physics</NavItem>
+                  </LinkContainer>
                   <LinkContainer to="/settings">
                     <NavItem>Settings</NavItem>
                   </LinkContainer>

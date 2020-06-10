@@ -8,7 +8,7 @@ import {
 import CBDyn from './CBDyn';
 import NotesDyn from './NotesDyn';
 import VocabDyn from './VocabDyn';
-import "./styles/Dynamics.css";
+import "./styles/Master.css";
 
 
 class Dynamics extends Component {
@@ -16,11 +16,11 @@ class Dynamics extends Component {
     return (
         <HashRouter>
         <div>
-          <ul className="header">
-          <li><NavLink to="/collegeboardDyn">CB</NavLink></li>
-          <li><NavLink to="/notesDyn">NOTES</NavLink></li>
-          <li><NavLink to="/vocabDyn">VOCAB</NavLink></li>
-          <li><NavLink to="/practiceDyn">Example Problems</NavLink></li>
+          <ul className="header" style={{background: "#001a00"}}>
+          <li><NavLink to="/collegeboardDyn" style={{color: "white"}}>CB</NavLink></li>
+          <li><NavLink to="/notesDyn" style={{color: "white"}}>NOTES</NavLink></li>
+          <li><NavLink to="/vocabDyn" style={{color: "white"}}>VOCAB</NavLink></li>
+          <li><NavLink to="/practiceDyn" style={{color: "white"}}>Example Problems</NavLink></li>
           </ul>
           <div className="content">
           <Route path="/collegeboardDyn" component={CBDyn}/>
