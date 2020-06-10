@@ -14,6 +14,12 @@ import Physics from "./pages/Physics";
 import Fluids from "./containers/Fluids";
 import CarouselPage from "./components/Carousel";
 import NameForm from "./components/MyForm";
+import Kinematics from "./containers/Kinematics";
+import Dynamics from "./containers/PhysicsContainers/Dynamics";
+import UCM from "./containers/PhysicsContainers/UCM";
+import Energy from "./containers/PhysicsContainers/Energy";
+import Momo from "./containers/PhysicsContainers/Momo";
+import Rotation from "./containers/PhysicsContainers/Rotation";
 
 export default function Routes() {
   return (
@@ -29,6 +35,24 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <AuthenticatedRoute exact path="/physics">
         <Physics />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/kinematics">
+        <Kinematics />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/dynamics">
+        <Dynamics />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/ucm">
+        <UCM />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/energy">
+        <Energy />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/momentum">
+        <Momo />
+      </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/rotation">
+        <Rotation />
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/fluids">
         <Fluids />
