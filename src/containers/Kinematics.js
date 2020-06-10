@@ -9,7 +9,7 @@ import CollegeBoardKine from '../containers/CBKine';
 import NotesKine from '../containers/NotesKine';
 
 import VocabularyKine from '../containers/VocabularyKine';
-import "./styles/Kinematics.css";
+import "./styles/PhysicsStyles.css";
 
 
 class Kinematics extends Component {
@@ -17,11 +17,11 @@ class Kinematics extends Component {
     return (
         <HashRouter>
         <div>
-          <ul className="header">
-          <li><NavLink to="/collegeboardKine">CB</NavLink></li>
-          <li><NavLink to="/notesKine">NOTES</NavLink></li>
-          <li><NavLink to="/vocabularyKine">VOCAB</NavLink></li>
-          <li><NavLink to="/practiceKine">Example Problems</NavLink></li>
+          <ul className="header" style={{background: "#001a00"}}>
+          <li><NavLink id="myLink" to="/collegeboardKine" style={{color: "white"}}>CB</NavLink></li>
+          <li><NavLink to="/notesKine" style={{color: "white"}}>NOTES</NavLink></li>
+          <li><NavLink to="/vocabularyKine" style={{color: "white"}}>VOCAB</NavLink></li>
+          <li><NavLink to="/practiceKine" style={{color: "white"}}>Example Problems</NavLink></li>
           </ul>
           <div className="content">
           <Route path="/collegeboardKine" component={CollegeBoardKine}/>
