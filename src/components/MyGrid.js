@@ -156,7 +156,7 @@ import "./styles/MyGrid.css"
       
       const ResponsiveGrid = () => (
         <Grommet theme={customBreakpoints}>
-          <Box style={{background: "lawngreen"}}>      
+          <Box style={{background: "rgb(53, 78, 1)"}}>      
             <Responsive pad="small" gap="medium" margin="large" columns="small" rows="medium">
               {listAnimalsBoxes}
             </Responsive>
