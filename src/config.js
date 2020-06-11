@@ -2,7 +2,7 @@ const dev = {
     STRIPE_KEY: "pk_test_fgmL2p2LSsn7bv2V0aCpUFqM002onPyRWO",
     s3: {
       REGION: "us-east-1",
-      BUCKET: "tickers-app-api-dev-attachmentsbucket-4zb89mt9a3er"
+      BUCKET: "blogs-app-api-dev-attachmentsbucket-1flmh6d4lu9se"
     },
     apiGateway: {
       REGION: "us-east-1",
@@ -10,9 +10,9 @@ const dev = {
     },
     cognito: {
       REGION: "us-east-1",
-      USER_POOL_ID: "us-east-1_bTDy7dREW",
-      APP_CLIENT_ID: "604dn7d0f2aqcv6mm6cn6aj8oc",
-      IDENTITY_POOL_ID: "us-east-1:704eeae2-7a62-438e-9086-8c570b738780"
+      USER_POOL_ID: "us-east-1_Rnt7jZRep",
+      APP_CLIENT_ID: "6sqb6g32tno7kov72ht8k7cjfl",
+      IDENTITY_POOL_ID: "us-east-1:a9cd44e0-866b-4d51-bc60-4d556443641e"
     }
   };
   

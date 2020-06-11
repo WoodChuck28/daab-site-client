@@ -20,6 +20,10 @@ import UCM from "./containers/PhysicsContainers/UCM";
 import Energy from "./containers/PhysicsContainers/Energy";
 import Momo from "./containers/PhysicsContainers/Momo";
 import Rotation from "./containers/PhysicsContainers/Rotation";
+import BlogPage from "./pages/BlogPage";
+import NewBlog from "./containers/NewBlog";
+import BlogForm from "./components/BlogForm";
+import FormContainer from "./containers/FormContainer";
 
 export default function Routes() {
   return (
@@ -32,6 +36,12 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/signup">
         <Signup />
+      </UnauthenticatedRoute>
+      <AuthenticatedRoute exact path="/blog">
+        <NewBlog />
+      </AuthenticatedRoute>
+      <UnauthenticatedRoute exact path="/blog/new">
+        <NewBlog />
       </UnauthenticatedRoute>
       <AuthenticatedRoute exact path="/physics">
         <Physics />
