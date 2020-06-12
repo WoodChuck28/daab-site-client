@@ -12,6 +12,7 @@ import WorkedExamplesFluids from "../containers/WorkedExamplesFluids";
 import "./styles/PhysicsStyles.css";
 import NotesOutline from "../containers/NotesOutlineFluids";
 import SimsFluids from "./SimsFluids";
+import VideosFluids from "./PhysicsContainers/VideosFluids";
 
 class Fluids extends Component {
   render() {
@@ -25,6 +26,7 @@ class Fluids extends Component {
           <li><NavLink to="/vocabularyFluids" style={{color: "white"}}>VOCAB</NavLink></li>
           <li><NavLink to="/examplesFluids" style={{color: "white"}}>EXAMPLES</NavLink></li>
           <li><NavLink to="/simsFluids" style={{color: "white"}}>Simulations</NavLink></li>
+          <li><NavLink to="/videosFluids" style={{color: "white"}}>Videos</NavLink></li>
           </ul>
           <div className="content">
           <Route path="/collegeboardFluids" component={CollegeBoardFluid}/>
@@ -33,6 +35,7 @@ class Fluids extends Component {
           <Route path="/vocabularyFluids" component={Vocabulary}/>
           <Route path="/examplesFluids" component={WorkedExamplesFluids}/>
           <Route path="/simsFluids" component={SimsFluids}/>
+          <Route path="/videosFluids" component={VideosFluids}/>
           </div>
         </div>
         </HashRouter>
