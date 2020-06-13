@@ -74,11 +74,8 @@ function App() {
                   <LinkContainer to="/login">
                     <NavItem>Login</NavItem>
                   </LinkContainer>
-                  <LinkContainer to="/signup">
+                  <LinkContainer to="/physics">
                     <NavItem>Physics</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/login">
-                    <NavItem>Store</NavItem>
                   </LinkContainer>
                 </>
               )}
