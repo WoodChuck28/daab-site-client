@@ -15,9 +15,6 @@ export default function Blogs() {
 
   useEffect(() => {
     async function onLoad() {
-      if (!isAuthenticated) {
-        return;
-      }
   
       try {
         const blogs = await loadBlogs();
@@ -30,7 +27,7 @@ export default function Blogs() {
     }
   
     onLoad();
-  }, [isAuthenticated]);
+  });
   
   function loadBlogs() {
     return API.get("blogs", "/blogs");
@@ -40,9 +37,9 @@ export default function Blogs() {
     return [{}].concat(blogs).map((blog, i) =>
       i !== 0 ? (
         <LinkContainer key={blog.blogsId} to={`/blogs/${blog.blogsId}`}>
-          <ListGroupItem header={blog.content.trim().split("\n")[0]}>
-            {"Created: " + new Date(blog.createdAt).toLocaleString()}
-          </ListGroupItem>
+            <ListGroupItem header={blog.content.trim().split("\n")[0]}>
+                {"Created: " + new Date(blog.createdAt).toLocaleString()}
+            </ListGroupItem>
         </LinkContainer>
       ) : (
         <LinkContainer key="new" to="/blogs/new">
@@ -53,15 +50,6 @@ export default function Blogs() {
           </ListGroupItem>
         </LinkContainer>
       )
-    );
-  }
-
-  function renderLander() {
-    return (
-      <div className="lander">
-        <h1>Scratch</h1>
-        <p>A simple blog component</p>
-      </div>
     );
   }
 
@@ -77,8 +65,8 @@ export default function Blogs() {
   }
 
   return (
-    <div className="Blogs">
-      {isAuthenticated ? renderBlogs() : renderLander()}
+    <div className="blogs">
+      {renderBlogs()}
     </div>
   );
 }
