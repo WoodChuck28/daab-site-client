@@ -10,18 +10,6 @@ export default function Home() {
   const { isAuthenticated } = useAppContext();
   const [ isLoading, setIsLoading ] = useState(true);
 
-  useEffect(() => {
-    async function onLoad() {
-      if (!isAuthenticated) {
-        return;
-      }
-
-      setIsLoading(false);
-    }
-
-    onLoad();
-  }, [isAuthenticated]);
-
   function displayHome() {
     return (<div className="container">
     <div className="header">
@@ -85,9 +73,6 @@ export default function Home() {
           <Link to="/login" className="btn btn-info btn-lg">
             Login
           </Link>
-          <Link to="/signup" className="btn btn-success btn-lg">
-            Signup
-          </Link>
         </div>
       </div>
     );
@@ -95,7 +80,7 @@ export default function Home() {
 
   return (
     <div className="Home">
-      {isAuthenticated ? displayHome() : renderLander()}
+      {displayHome()}
     </div>
   );
 }

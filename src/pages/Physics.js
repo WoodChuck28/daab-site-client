@@ -10,28 +10,8 @@ import { Card } from "@material-ui/core";
 export default function Physics() {
   const { isAuthenticated } = useAppContext();
   const [isLoading, setIsLoading] = useState(true);
-  function renderLander() {
-    return (
-      <div className="lander">
-        <h1>Physics Home</h1>
-        <p>One stop shop for all of algebra based physics</p>
-        <div>
-          <Link to="/login" className="btn btn-info btn-lg">
-            Login
-          </Link>
-          <Link to="/signup" className="btn btn-success btn-lg">
-            Signup
-          </Link>
-        </div>
-        <div>
-          <h2>Physics Test</h2>
-        </div>
-      </div>
-    );
-  }
-
+  
   function displayMainPhysics() {
-     
     return (
       <div className="mainClass" style={{backgroundColor: "#354e01"}}>
       <div></div>
@@ -54,7 +34,7 @@ export default function Physics() {
 
   return (
     <div className="Physics">
-      {isAuthenticated ? displayMainPhysics() : renderLander()}
+      {displayMainPhysics()}
     </div>
   );
 }

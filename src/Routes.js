@@ -30,54 +30,52 @@ export default function Routes() {
       <Route exact path="/">
         <Home />
       </Route>
-      <UnauthenticatedRoute exact path="/login">
-        <Login />
-      </UnauthenticatedRoute>
-      <UnauthenticatedRoute exact path="/signup">
-        <Signup />
-      </UnauthenticatedRoute>
-      <AuthenticatedRoute exact path="/blog">
-        <NewBlog />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/blogs">
-        <Blogs />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/physics">
-        <Physics />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/kinematics">
-        <Kinematics />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/dynamics">
-        <Dynamics />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/ucm">
-        <UCM />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/energy">
-        <Energy />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/momentum">
-        <Momo />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/rotation">
-        <Rotation />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/fluids">
-        <Fluids />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/carousel">
-        <CarouselPage />
-      </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/nameform">
         <NameForm />
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/settings">
         <Settings />
       </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/notes/:id">
-        <Notes />
+      <AuthenticatedRoute exact path="/blog">
+        <NewBlog />
       </AuthenticatedRoute>
+      <AuthenticatedRoute exact path="/blogs">
+        <Blogs />
+      </AuthenticatedRoute>
+      <UnauthenticatedRoute exact path="/login">
+        <Login />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/signup">
+        <Signup />
+      </UnauthenticatedRoute>
+      <Route exact path="/physics">
+        <Physics />
+      </Route>
+      <UnauthenticatedRoute exact path="/kinematics">
+        <Kinematics />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/dynamics">
+        <Dynamics />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/ucm">
+        <UCM />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/energy">
+        <Energy />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/momentum">
+        <Momo />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/rotation">
+        <Rotation />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/fluids">
+        <Fluids />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/carousel">
+        <CarouselPage />
+      </UnauthenticatedRoute>
+      
       
       {/* Finally, catch all unmatched routes */}
       <Route>
