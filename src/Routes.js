@@ -6,7 +6,6 @@ import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
 
 import Home from "./pages/Home";
 import Login from "./containers/Login";
-import Notes from "./containers/Notes";
 import Signup from "./containers/Signup";
 import Settings from "./containers/Settings";
 import NotFound from "./containers/NotFound";
@@ -23,7 +22,6 @@ import Rotation from "./containers/PhysicsContainers/Rotation";
 import NewBlog from "./containers/NewBlog";
 import Blogs from "./containers/Blogs";
 
-
 export default function Routes() {
   return (
     <Switch>
@@ -39,9 +37,9 @@ export default function Routes() {
       <AuthenticatedRoute exact path="/blog">
         <NewBlog />
       </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/blogs">
+      <UnauthenticatedRoute exact path="/blogs">
         <Blogs />
-      </AuthenticatedRoute>
+      </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/login">
         <Login />
       </UnauthenticatedRoute>
