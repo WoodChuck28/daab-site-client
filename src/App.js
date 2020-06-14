@@ -68,11 +68,8 @@ function App() {
                 </>
               ) : (
                 <>
-                  <LinkContainer to="/signup">
-                    <NavItem>Signup</NavItem>
-                  </LinkContainer>
                   <LinkContainer to="/login">
-                    <NavItem>Login</NavItem>
+                    <NavItem>Admin Login</NavItem>
                   </LinkContainer>
                   <LinkContainer to="/physics">
                     <NavItem>Physics</NavItem>

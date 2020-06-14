@@ -17,7 +17,7 @@ const CarouselPage = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+              src="http://3.bp.blogspot.com/-FZnYU3pQlbk/T_6B0GeG6fI/AAAAAAAAEuc/d_JPfy5D5oE/s1600/space+wallpaper+(1).jpeg"
               alt="First slide"
               height="400px"
             />
@@ -32,7 +32,7 @@ const CarouselPage = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+              src="http://www.technocrazed.com/wp-content/uploads/2015/12/HD-Space-Wallpaper-For-Background-2.jpg"
               alt="Second slide"
               height="400px"
             />
@@ -47,7 +47,7 @@ const CarouselPage = () => {
           <MDBView>
             <img
               className="d-block w-100"
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+              src="https://wallpapercave.com/wp/lkgujv7.jpg"
               alt="Third slide"
               height="400px"
             />
