@@ -27,7 +27,7 @@ export default function Blogs() {
     }
   
     onLoad();
-  });
+}, [isAuthenticated]);
   
   function loadBlogs() {
     return API.get("blogs", "/blogs");

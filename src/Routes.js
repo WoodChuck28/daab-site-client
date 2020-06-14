@@ -21,6 +21,8 @@ import Momo from "./containers/PhysicsContainers/Momo";
 import Rotation from "./containers/PhysicsContainers/Rotation";
 import NewBlog from "./containers/NewBlog";
 import Blogs from "./containers/Blogs";
+import BlogPage from "./pages/BlogPage";
+import EandM from "./containers/PhysicsContainers/EandM";
 
 export default function Routes() {
   return (
@@ -35,10 +37,10 @@ export default function Routes() {
         <Settings />
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/blog">
-        <NewBlog />
+        <Blogs />
       </AuthenticatedRoute>
       <UnauthenticatedRoute exact path="/blogs">
-        <Blogs />
+        <BlogPage />
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/login">
         <Login />
@@ -46,9 +48,9 @@ export default function Routes() {
       <UnauthenticatedRoute exact path="/signup">
         <Signup />
       </UnauthenticatedRoute>
-      <UnauthenticatedRoute exact path="/physics">
+      <Route exact path="/physics">
         <Physics />
-      </UnauthenticatedRoute>
+      </Route>
       <UnauthenticatedRoute exact path="/kinematics">
         <Kinematics />
       </UnauthenticatedRoute>
@@ -69,6 +71,9 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/fluids">
         <Fluids />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/EandM">
+        <EandM />
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/carousel">
         <CarouselPage />

@@ -83,7 +83,7 @@ import "./styles/MyGrid.css"
         "Rotation",
         "Waves",
         "Statics",
-        "E&M",
+        "EandM",
         "Fluids",
         "Thermo"
       ];
