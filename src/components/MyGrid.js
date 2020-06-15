@@ -85,7 +85,10 @@ import "./styles/MyGrid.css"
         "Statics",
         "EandM",
         "Fluids",
-        "Thermo"
+        "Thermo",
+        "Optics",
+        "Quantum",
+        "Nuclear"
       ];
       
 
