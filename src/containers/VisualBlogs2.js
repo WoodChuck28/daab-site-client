@@ -14,7 +14,7 @@ class BlogsVisual2 extends Component {
             </CardContent>
         </Card>
         <Card>
-            <CardContent style={{textAlign: "left"}}>
+            <CardContent style={{textAlign: "left", padding: "20px"}}>
                 <p>MRDaab.com is a serverless website built on Javascript, HTML, React, and Amazon Web Services. The incredible thing 
                 about a SERVLESS framework is the scalability. I am only charged WHEN someone executes a function in my site. Generally, 
                 developers use a pay per hour type structure which can be expensive as you scale your webpage. This website operated on 
