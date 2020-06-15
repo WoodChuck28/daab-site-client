@@ -23,6 +23,9 @@ import NewBlog from "./containers/NewBlog";
 import Blogs from "./containers/Blogs";
 import BlogPage from "./pages/BlogPage";
 import EandM from "./containers/PhysicsContainers/EandM";
+import Optics from "./containers/PhysicsContainers/Optics";
+import WavesInterference from "./containers/PhysicsContainers/multiSims/WaveInterference";
+import BendingLight from "./containers/PhysicsContainers/multiSims/BendingLight";
 
 export default function Routes() {
   return (
@@ -74,6 +77,15 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/EandM">
         <EandM />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/Optics">
+        <Optics />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/Optics/simsOptics/waveInterference">
+        <WavesInterference />
+      </UnauthenticatedRoute>
+      <UnauthenticatedRoute exact path="/Optics/simsOptics/bendingLight">
+        <BendingLight />
       </UnauthenticatedRoute>
       <UnauthenticatedRoute exact path="/carousel">
         <CarouselPage />
