@@ -4,6 +4,10 @@
 *  Basic Reset
 */
  
+* {
+	font-size: 18px;
+}
+
 *,
 *:after,
 *:before {
@@ -41,7 +45,7 @@ h2 {
 }
 
 .wrapper {
-	max-width: 400px;
+	max-width: 1200px;
 	margin: 30px auto;
 	padding-left: 1em;
     padding-right: 1em;
@@ -221,3 +225,15 @@ h2 {
 	.googleplus:hover {
 		color: #eee;
 	}
+
+.header {
+	background-color: inherit;
+}
+
+.border-tlr-radius {
+	border-radius: 20px;
+}
+
+.shadowDepth1 {
+	border-radius: 20px;
+}

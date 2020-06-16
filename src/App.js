@@ -9,7 +9,6 @@ import { onError } from "./libs/errorLib";
 import Routes from "./Routes";
 import MyFooter from "./components/myFooter"
 import "./App.css";
-import * as Sentry from '@sentry/browser';
 
 
 
