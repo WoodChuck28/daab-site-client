@@ -1,7 +1,6 @@
 {
   "name": "daab-site-client",
   "version": "0.1.0",
-  "build": "node --max_old_space_size=8192 <entry_file_path> --progress --env.<dev/prod>",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -25,7 +24,6 @@
     "react-player": "^2.3.1",
     "react-router-bootstrap": "^0.25.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1",
     "react-stripe-elements": "^6.1.2",
     "react-toolbox": "^2.0.0-beta.13",
     "semantic-ui-react": "^0.88.2",
