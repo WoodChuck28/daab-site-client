@@ -16,6 +16,7 @@ import VideosFluids from "./PhysicsContainers/VideosFluids";
 import FluidsLabOne from "./PhysicsContainers/labs/FluidsLab1";
 
 import "./styles/PhysicsStyles.css";
+import BucketLab from "./PhysicsContainers/labs/FluidsLab2";
  
 class Fluids extends Component {
   render() {
@@ -35,10 +36,12 @@ class Fluids extends Component {
             <Route path="/Vocabulary" component={Vocabulary}/>
             <Route path="/Simulations" component={SimsFluids}/>
             <Route path="/Videos" component={VideosFluids}/>
-            <Route path="/Homework" component={NotesOutline}/>
-            <Route path="/Labs" component={FluidsLabOne}/>
+            <Route path="/Homework" component={Notes}/>
+            <Route path="/LabOne" component={FluidsLabOne}/>
+            <Route path="/LabTwo" component={BucketLab}/>
           </div>
         </div>
+        
         </HashRouter>
     );
   }
