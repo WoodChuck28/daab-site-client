@@ -51,30 +51,17 @@ export default function Home() {
         <img src="https://ox8wcq.bl.files.1drv.com/y4mt_0C-12zD_-qZlO5caw1n3ZulBvZPgIXiK4gd3XvZbUxTzz3th_bpcUb8SJiSLC-kK06yW_jKaYyxkVxiyvZaZKIJATQLFyadBTLrx_NH52n8OWSBTSt-lyk6gb5DsCG4vsjEWl66DzrN-C7eTTRiE77X3JScYyI2sxxu-G-jVYBWH9nUJEU40mBuIDtnrQJj9c1q8-QTsHPkuAZ8evgYw?width=660&height=440&cropmode=none" 
         width="100%" height="300" />
         <div className="content-details fadeIn-bottom">
-          <h3 className="content-title">Adventure of Mr. Daab</h3>
+          <h3 className="content-title">Adventures of Mr. Daab</h3>
             <p className="content-text">What is he getting into now? A little about everything.</p>
         </div>
         </a>
       </div>
         </div> 
-        
-</div>
 </div>
 
-    );
-  }
 
-  function renderLander() {
-    return (
-      <div className="lander">
-        <h1>Mr.Daab.com</h1>
-        <p>An Awesome Site!</p>
-        <div>
-          <Link to="/login" className="btn btn-info btn-lg">
-            Login
-          </Link>
-        </div>
-      </div>
+</div>
+
     );
   }
 

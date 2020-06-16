@@ -2,7 +2,7 @@ import React from 'react';
 import { Wrapper, Button, Menu, MenuItem } from 'react-aria-menubutton';
 import { NavLink } from 'react-router-dom';
  
-const menuItemWords = ['Homework', 'Labs'];
+const menuItemWords = ['Homework', 'LabOne', 'LabTwo'];
  
 export default class MyMenuButton3 extends React.Component {
   render() {
