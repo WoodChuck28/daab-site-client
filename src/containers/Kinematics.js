@@ -7,37 +7,38 @@ import {
 
 import CollegeBoardKine from '../containers/CBKine';
 import NotesKine from '../containers/NotesKine';
-
 import VocabularyKine from '../containers/VocabularyKine';
-import "./styles/PhysicsStyles.css";
-import { Card, CardContent } from "@material-ui/core";
+import MyMenuButton from "../components/MyMenuButton";
+import MyMenuButton2 from "../components/MyMenuButton2";
+import MyMenuButton3 from "../components/MyMenuButton3";
+import SimsFluids from "./SimsFluids";
+import VideosFluids from "./PhysicsContainers/VideosFluids";
 
+import "./styles/PhysicsStyles.css";
 
 class Kinematics extends Component {
   render() {
     return (
-        <HashRouter>
-        <div>
-          <ul className="header" style={{background: "#001a00"}}>
-          <li><NavLink id="myLink" to="/collegeboardKine" style={{color: "white"}}>CB</NavLink></li>
-          <li><NavLink to="/notesKine" style={{color: "white"}}>NOTES</NavLink></li>
-          <li><NavLink to="/vocabularyKine" style={{color: "white"}}>VOCAB</NavLink></li>
-          <li><NavLink to="/practiceKine" style={{color: "white"}}>Example Problems</NavLink></li>
-          </ul>
-          <div className="content">
-          <Route path="/collegeboardKine" component={CollegeBoardKine}/>
-          <Route path="/notesKine" component={NotesKine}/>
-          <Route path="/vocabularyKine" component={VocabularyKine}/>
-          </div>
+      <HashRouter>
+      <div>
+        <ul className="header" style={{background: "#001a00"}}>
+        <MyMenuButton />
+        <li><MyMenuButton2 /></li>
+        <li><MyMenuButton3 /></li>
+        </ul>
+        
+        <div className="content">
+          <Route path="/CollegeBoard" component={CollegeBoardKine}/>
+          <Route path="/Notes" component={NotesKine}/>
+          <Route path="/Outline" component={NotesKine}/>
+          <Route path="/Vocabulary" component={VocabularyKine}/>
+          <Route path="/Simulations" component={SimsFluids}/>
+          <Route path="/Videos" component={VideosFluids}/>
+          <Route path="/Homework" component={NotesKine}/>
+          <Route path="/Labs" />
         </div>
-        <Card style={{background: "inherit"}}>
-          <CardContent style={{textAlign: "center"}}>
-          <h4>Kinematics - The study of motion in one or more dimensions.</h4>
-            <img src="https://hips.hearstapps.com/autoweek/assets/s3fs-public/1017401483-LAT-20190323-lepage-190323-cota-12919.jpg?crop=1xw:0.8888888888888888xh;center,top&resize=980:*"
-            style={{width: "60%", height:"300px"}} />
-          </CardContent>
-        </Card>
-        </HashRouter>
+      </div>
+      </HashRouter>
         
         
         
