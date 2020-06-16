@@ -1,6 +1,7 @@
 {
   "name": "daab-site-client",
   "version": "0.1.0",
+  "build": "node --max_old_space_size=8192 <entry_file_path> --progress --env.<dev/prod>",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
