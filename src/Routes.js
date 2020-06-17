@@ -19,7 +19,6 @@ import UCM from "./containers/PhysicsContainers/UCM";
 import Energy from "./containers/PhysicsContainers/Energy";
 import Momo from "./containers/PhysicsContainers/Momo";
 import Rotation from "./containers/PhysicsContainers/Rotation";
-import Blogs from "./containers/Blogs";
 import BlogPage from "./pages/BlogPage";
 import EandM from "./containers/PhysicsContainers/EandM";
 import Optics from "./containers/PhysicsContainers/Optics";
@@ -37,9 +36,6 @@ export default function Routes() {
       </AuthenticatedRoute>
       <AuthenticatedRoute exact path="/settings">
         <Settings />
-      </AuthenticatedRoute>
-      <AuthenticatedRoute exact path="/blog">
-        <Blogs />
       </AuthenticatedRoute>
       <UnauthenticatedRoute exact path="/blogs">
         <BlogPage />

@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { PageHeader, ListGroup } from "react-bootstrap";
-import { useAppContext } from "../libs/contextLib";
-import "./styles/Physics.css";
-
+import React from "react";
 import ResponsiveGrid from "../components/MyGrid";
 import { Card } from "@material-ui/core";
+import "./styles/Physics.css";
 
 export default function Physics() {
-  const { isAuthenticated } = useAppContext();
-  const [isLoading, setIsLoading] = useState(true);
-  
   function displayMainPhysics() {
     return (
       <div className="mainClass" style={{backgroundColor: "#354e01"}}>

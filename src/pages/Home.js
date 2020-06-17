@@ -1,14 +1,11 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
-import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
-import { ListGroup } from "react-bootstrap";
-import { useAppContext } from "../libs/contextLib";
+import React from "react";
+
 import "./styles/Home.css";
 import CarouselPage from "../components/Carousel"
 
 export default function Home() {
-  const { isAuthenticated } = useAppContext();
-  const [ isLoading, setIsLoading ] = useState(true);
+ 
 
   function displayHome() {
     return (<div className="container">
