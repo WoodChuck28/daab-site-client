@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
 import { CardContent, Card } from "@material-ui/core";
 
- 
 class BlogsVisual2 extends Component {
   render() {
     return (

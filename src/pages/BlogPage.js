@@ -5,13 +5,11 @@ import {
     NavLink,
     HashRouter
   } from "react-router-dom";
-import { ListGroup } from "react-bootstrap";
 import "./styles/Home.css";
 import BlogsVisual from "../containers/VisualBlogs"
 import BlogsVisual2 from "../containers/VisualBlogs2";
 
 import "./styles/Blog.css"
-import { Grid } from "@material-ui/core";
 
 
 export default function BlogPage() {
