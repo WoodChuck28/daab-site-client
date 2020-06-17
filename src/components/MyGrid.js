@@ -48,30 +48,6 @@ import "./styles/MyGrid.css"
         xlarge: ["xsmall"]
       };
       
-      // Set the different areas you need for every size
-      const fixedGridAreas = {
-        small: [
-          { name: "header", start: [0, 0], end: [0, 0] },
-          { name: "test", start: [0, 1], end: [0, 1] },
-          { name: "test1", start: [0, 2], end: [0, 2] }
-        ],
-        medium: [
-          { name: "header", start: [0, 0], end: [1, 0] },
-          { name: "test", start: [0, 1], end: [0, 1] },
-          { name: "test1", start: [1, 1], end: [1, 1] }
-        ],
-        large: [
-          { name: "header", start: [0, 0], end: [0, 0] },
-          { name: "test", start: [1, 0], end: [1, 0] },
-          { name: "test1", start: [2, 0], end: [2, 0] }
-        ],
-        xlarge: [
-          { name: "header", start: [0, 0], end: [0, 0] },
-          { name: "test", start: [1, 0], end: [1, 0] },
-          { name: "test1", start: [2, 0], end: [2, 0] }
-        ]
-      };
-      
       // Let's say this is returned from an API
       const animals = [
         "Kinematics",
@@ -91,7 +67,6 @@ import "./styles/MyGrid.css"
         "Nuclear"
       ];
       
-
       // Create box for each animal
       const listAnimalsBoxes = animals.map(animalName => (
           
@@ -130,14 +105,7 @@ import "./styles/MyGrid.css"
                 columnsVal = columns[size];
               }
             }
-      
-            let rowsVal = rows;
-            if (rows) {
-              if (rows[size]) {
-                rowsVal = rows[size];
-              }
-            }
-      
+            
             // Also if areas is a simple array not an object of arrays for
             // different sizes
             let areasVal = areas;

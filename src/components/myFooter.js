@@ -7,7 +7,7 @@ import {
     Twitter
   } from "grommet-icons";
   
-  import { Anchor, Box, Footer, grommet, Grommet, Main, Text } from "grommet";
+  import { Anchor, Box, Footer,  Grommet, Text } from "grommet";
 
   import "./styles/myFooter.css"
 

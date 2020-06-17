@@ -8,7 +8,6 @@ import {
 import CBOptics from './CBOptics';
 import NotesOptics from './NotesOptics';
 import VocabOptics from './VocabOptics';
-import { Card, CardContent } from "@material-ui/core";
 
 import "./styles/Master.css";
 import WorkedExamplesOptics from "./WorkedExamplesOptics";

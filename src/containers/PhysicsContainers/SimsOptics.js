@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Iframe from 'react-iframe'
 import "./styles/Energy.css";
 import { HashRouter, NavLink, Route } from "react-router-dom";
 import BendingLight from "./multiSims/BendingLight";
