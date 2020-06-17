@@ -29,19 +29,17 @@ export default function BlogPage() {
     		<div class="row card__padding" style={{display: "flex", marginLeft: "10px"}}>
     		<div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
     			<div class="card__image border-tlr-radius">
-    				<img src={image1} height="200" alt="image" class="border-tlr-radius"/>
+    				<img src={image1} height="200" alt="galaxy" class="border-tlr-radius"/>
                 </div>
 
     			<div class="card__content card__padding">
                     <div class="card__share">
                         <div class="card__social">  
-                            <a class="share-icon facebook" href="#" ><span class="fa fa-facebook"></span></a>
-                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
-                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                            
                         </div>
                     </div>
     				<div class="card__meta">
-    					<a href="#">General</a>
+    					<a href="/general">General</a>
                 <time>13 June 2020</time>
     				</div>
     				<article class="card__article">
@@ -53,7 +51,7 @@ export default function BlogPage() {
     				<div class="card__author">
     					<img src={image2} width="50" height= "50" alt="user"/>
     					<div class="card__author-content">
-    						By <a href="#">Mr. Daab</a>
+    						By <a href="/home">Mr. Daab</a>
     					</div>
     				</div>
     			</div>
@@ -61,19 +59,12 @@ export default function BlogPage() {
 
         <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
     			<div class="card__image border-tlr-radius">
-    				<img src={serverlessImage} height="200" alt="image" class="border-tlr-radius"/>
+    				<img src={serverlessImage} height="200" alt="me" class="border-tlr-radius"/>
                 </div>
 
     			<div class="card__content card__padding">
-                    <div class="card__share">
-                        <div class="card__social">  
-                            <a class="share-icon facebook" href="#" ><span class="fa fa-facebook"></span></a>
-                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
-                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
-                        </div>
-                    </div>
     				<div class="card__meta">
-    					<a href="#">Development</a>
+    					<a href="/development">Development</a>
                 <time>14 June 2020</time>
     				</div>
     				<article class="card__article">
@@ -86,7 +77,7 @@ export default function BlogPage() {
     				<div class="card__author">
     					<img src={image2} width="50" height="50" alt="user"/>
     					<div class="card__author-content">
-    						By <a href="#">Mr. Daab</a>
+    						By <a href="/home">Mr. Daab</a>
     					</div>
     				</div>
     			</div>

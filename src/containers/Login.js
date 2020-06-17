@@ -16,8 +16,6 @@ export default function Login() {
     password: ""
   });
 
-  var userName = fields.email
-  //return userName
 
   function validateForm() {
     return fields.email.length > 0 && fields.password.length > 0;

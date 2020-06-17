@@ -6,8 +6,8 @@ class SimsEandM extends Component {
   render() {
     return (
     <div className="myclass">
-    <iframe src="https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_en.html" 
-    width="100%" height="500" scrolling="no" allowfullscreen></iframe>
+    <Iframe src="https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_en.html" 
+    width="100%" height="500" scrolling="no" allowfullscreen></Iframe>
       </div>
     );
   }
