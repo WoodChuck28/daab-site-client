@@ -15,7 +15,7 @@ import BlogsVisual3 from "../containers/VisualBlogs3";
 
 export default function BlogPage() {
   const image1 = require('../assets/resources/img/galaxy2.jpg');
-  const image2 = require('../assets/resources/img/MyLOGO.png');
+  const myLogo = require('../assets/resources/img/MyLOGO.PNG');
   const peaceSymb = require('../assets/resources/img/peace-symbol.jpg')
   const serverlessImage = require('../assets/resources/img/Serverless.PNG')
 
@@ -52,7 +52,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={image2} width="50" height= "50" alt="user" id="myImage"/>
+                  <img src={myLogo} width="50" height= "50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -78,7 +78,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={image2} width="50" height="50" alt="user" id="myImage"/>
+                  <img src={myLogo} width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -104,7 +104,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={image2} width="50" height="50" alt="user" id="myImage"/>
+                  <img src={myLogo} width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
