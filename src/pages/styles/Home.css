@@ -59,6 +59,7 @@
   .right {
     padding: 10px;
     justify-content: center;
+    text-align: center;
   }
   
   /* Style the left column */
@@ -66,30 +67,24 @@
     border-radius: 20px;
     background: inherit;
     grid-area: left;
-    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
+    
   }
   
   /* Style the middle column */
   .middle {
     border-radius: 20px;
     grid-area: middle;
-    justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    background: inherit;
+    
   }
   
   /* Style the right column */
   .right {
     border-radius: 20px;
     grid-area: right;
-    justify-content: center;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    
   }
   
   /* Style the footer */
@@ -103,7 +98,7 @@
   @media (max-width: 600px) {
     .grid-container  {
       grid-template-areas: 
-        'header header header header header header' 
+        'header header header header header' 
         'left left left left left left' 
         'middle middle middle middle middle middle' 
         'right right right right right right' 
@@ -139,7 +134,7 @@
     color: white;
     font-size: 16px;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 40px;
     border-radius: 50px;
   }
@@ -153,7 +148,7 @@
     color: white;
     font-size: 16px;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 40px;
   }
   
@@ -166,7 +161,7 @@
     color: white;
     font-size: 16px;
     text-align: center;
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 40px;
   }
   
@@ -198,8 +193,9 @@
   
   .content {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
+    padding: 0px;
     margin: auto;
     overflow: hidden;
   }
@@ -220,6 +216,10 @@
     transition: all 0.4s ease-in-out 0s;
   }
   
+  #myContent {
+    padding-left: 0px!important;
+  }
+
   .content:hover .content-overlay{
     opacity: 1;
   }
@@ -231,7 +231,6 @@
   .content-details {
     position: absolute;
     text-align: center;
-  
     width: 100%;
     top: 50%;
     left: 50%;

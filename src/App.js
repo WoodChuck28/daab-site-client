@@ -13,7 +13,6 @@ import "./App.css";
 
 
 function App() {
-  const history = useHistory();
   const [isAuthenticating, setIsAuthenticating] = useState(true);
   const [isAuthenticated, userHasAuthenticated] = useState(false);
 
@@ -35,48 +34,17 @@ function App() {
     setIsAuthenticating(false);
   }
 
-  async function handleLogout() {
-    await Auth.signOut();
-
-    userHasAuthenticated(false);
-
-    history.push("/login");
-  }
-
   return (
     !isAuthenticating && (
       <div className="App container">
-        <Navbar fluid collapseOnSelect>
-          <Navbar.Header>
+        <Navbar fluid collapseOnSelect >
+          <Navbar.Header id="myNavHeader">
             <Navbar.Brand>
               <Link to="/">MR DAAB</Link>
-            </Navbar.Brand>
-            <Navbar.Toggle />
+            </Navbar.Brand> 
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              {isAuthenticated ? (
-                <>
-                  <LinkContainer to="/physics">
-                    <NavItem>Physics</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/settings">
-                    <NavItem>Settings</NavItem>
-                  </LinkContainer>
-                  <NavItem onClick={handleLogout}>Logout</NavItem>
-                </>
-              ) : (
-                <>
-                  <LinkContainer to="/login">
-                    <NavItem>Admin Login</NavItem>
-                  </LinkContainer>
-                  <LinkContainer to="/physics">
-                    <NavItem>Physics</NavItem>
-                  </LinkContainer>
-                </>
-              )}
-            </Nav>
-          </Navbar.Collapse>
+              <a href="/physics"><button className="btn btn-navbar"  style={{float: "right"}}>Physics</button></a>
+              <a href="/blogs"><button className="btn btn-navbar"  style={{float: "right"}}>Blogs</button></a>
         </Navbar>
         <ErrorBoundary>
           <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
