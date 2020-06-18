@@ -24,6 +24,7 @@ import EandM from "./containers/PhysicsContainers/EandM";
 import Optics from "./containers/PhysicsContainers/Optics";
 import WavesInterference from "./containers/PhysicsContainers/multiSims/WaveInterference";
 import BendingLight from "./containers/PhysicsContainers/multiSims/BendingLight";
+import { Scheduler } from "./pages/Scheduler";
 
 export default function Routes() {
   return (
@@ -48,6 +49,9 @@ export default function Routes() {
       </UnauthenticatedRoute>
       <Route exact path="/physics">
         <Physics />
+      </Route>
+      <Route exact path="/schedule">
+        <Scheduler />
       </Route>
       <UnauthenticatedRoute exact path="/kinematics">
         <Kinematics />

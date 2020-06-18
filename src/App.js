@@ -1,16 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Auth } from "aws-amplify";
-import { Link, useHistory } from "react-router-dom";
-import { Nav, Navbar, NavItem } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Link } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { AppContext } from "./libs/contextLib";
 import { onError } from "./libs/errorLib";
 import Routes from "./Routes";
 import MyFooter from "./components/myFooter"
 import "./App.css";
-
-
 
 function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
@@ -43,8 +40,9 @@ function App() {
               <Link to="/">MR DAAB</Link>
             </Navbar.Brand> 
           </Navbar.Header>
-              <a href="/physics"><button className="btn btn-navbar"  style={{float: "right"}}>Physics</button></a>
+              <a href="/schedule"><button className="btn btn-navbar"  style={{float: "right"}}>Schedule</button></a>
               <a href="/blogs"><button className="btn btn-navbar"  style={{float: "right"}}>Blogs</button></a>
+              <a href="/physics"><button className="btn btn-navbar"  style={{float: "right"}}>Physics</button></a>
         </Navbar>
         <ErrorBoundary>
           <AppContext.Provider value={{ isAuthenticated, userHasAuthenticated }}>
