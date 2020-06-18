@@ -15,7 +15,7 @@ import BlogsVisual3 from "../containers/VisualBlogs3";
 
 export default function BlogPage() {
   const image1 = require('../assets/resources/img/galaxy2.jpg');
-  const myLogo = require('../assets/resources/img/MyLOGO.PNG');
+  const myLogo = require('../assets/resources/img/MyLOGO.png');
   const peaceSymb = require('../assets/resources/img/peace-symbol.jpg')
   const serverlessImage = require('../assets/resources/img/Serverless.PNG')
 
