@@ -31,6 +31,10 @@ body {
 	color: #666;
 }
 
+#myImage {
+	width: 50px!important;
+}
+
 a {
 	text-decoration: none;
 	color: #3498db;
