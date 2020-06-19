@@ -15,6 +15,8 @@ import my_logo from "../assets/resources/img/MyLOGO.png";
 
 import "./styles/Blog.css";
 
+console.log(galaxy_img);
+
 export default function BlogPage() {
   
   function displayBlogs() {
@@ -30,9 +32,8 @@ export default function BlogPage() {
             <div class="row card__padding" style={{display: "flex", marginLeft: "10px"}}>
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src={galaxy_img} height="200" alt="galaxy" class="border-tlr-radius"/>
-                    </div>
-
+                <img src={process.env.PUBLIC_URL + '/assets/resources/img/galaxy2.jpg'} height="200" alt="galaxy" class="border-tlr-radius"/>
+              </div>
               <div class="card__content card__padding">
                         <div class="card__share">
                             <div class="card__social">  
