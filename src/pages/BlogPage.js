@@ -84,7 +84,7 @@ export default function BlogPage() {
             {/* Blog3 */}
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src="/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
+                <img src="https://www.mrdaab.com/blogd/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
               </div>
               <div class="card__content card__padding">
                 <div class="card__meta">
