@@ -13,10 +13,10 @@ import BlogsVisual3 from "../containers/VisualBlogs3";
 import "./styles/Blog.css";
 
 export default function BlogPage() {
-  const serverlessImage = require('../assets/resources/img/Serverless.PNG');
-
+  const serverlessImage = require('../assets');
   const myImage = require('../assets/resources/img/MyLOGO.png');
   const peaceImage = require('../assets/resources/img/peace-symbol.jpg');
+  const galaxyImage = require('../assets/resources/img/galaxy2.jpg')
 
 
   function displayBlogs() {
@@ -32,7 +32,7 @@ export default function BlogPage() {
             <div class="row card__padding" style={{display: "flex", marginLeft: "10px"}}>
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src={myImage} height="200" alt="galaxy" class="border-tlr-radius"/>
+                <img src="/blogs/assets/resources/img/galaxy2.jpg" height="200" alt="galaxy" class="border-tlr-radius"/>
                     </div>
 
               <div class="card__content card__padding">
