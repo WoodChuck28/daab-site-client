@@ -27,7 +27,7 @@ export default function BlogPage() {
             <div class="row card__padding" style={{display: "flex", marginLeft: "10px"}}>
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src="/blogs/assets/resources/img/galaxy2.jpg" height="200" alt="galaxy" class="border-tlr-radius"/>
+                <img src="/assets/resources/img/galaxy2.jpg" height="200" alt="galaxy" class="border-tlr-radius"/>
                     </div>
 
               <div class="card__content card__padding">
@@ -47,7 +47,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src="/blogs/assets/resources/img/galaxy2.jpg" width="50" height= "50" alt="user" id="myImage"/>
+                  <img src="/assets/resources/img/galaxy2.jpg" width="50" height= "50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -57,7 +57,7 @@ export default function BlogPage() {
 
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src="/blogs/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
+                <img src="/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
                     </div>
 
               <div class="card__content card__padding">
@@ -73,7 +73,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src="/blogs/assets/resources/img/galaxy2.jpg" width="50" height="50" alt="user" id="myImage"/>
+                  <img src="/assets/resources/img/galaxy2.jpg" width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -84,7 +84,7 @@ export default function BlogPage() {
             {/* Blog3 */}
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src="/blogs/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
+                <img src="/assets/resources/img/galaxy2.jpg" height="200" alt="me" class="border-tlr-radius"/>
               </div>
               <div class="card__content card__padding">
                 <div class="card__meta">
@@ -99,7 +99,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src="/blogs/assets/resources/img/galaxy2.jpg" width="50" height="50" alt="user" id="myImage"/>
+                  <img src="/assets/resources/img/galaxy2.jpg" width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
