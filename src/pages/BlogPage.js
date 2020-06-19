@@ -12,7 +12,7 @@ import BlogsVisual3 from "../containers/VisualBlogs3";
 
 import "./styles/Blog.css";
 
-const galaxy_img = require("../assets/resources/img/galaxy3.jpg");
+const galaxy_img = require("../assets/resources/img/th.jpg");
 const my_logo = require("../assets/resources/img/MyLOGO.png");
 
 
