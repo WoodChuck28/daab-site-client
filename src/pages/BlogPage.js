@@ -14,8 +14,8 @@ import "./styles/Blog.css";
 
 export default function BlogPage() {
   const serverlessImage = require('../assets/resources/img/Serverless.PNG');
-  const myImage = require('../assets/resources/img/MyLOGO.png');
-  const peaceImage = require('../assets/resources/img/peace-symbol.jpg');
+  const myImage = require('/resources/img/MyLOGO.png');
+  const peaceImage = require('/resources/img/peace-symbol.jpg');
 
   function displayBlogs() {
     return (

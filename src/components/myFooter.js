@@ -35,12 +35,12 @@ import {
       />
       <Anchor
         a11yTitle="Chat with us on Slack"
-        href="https://www.facebook.com/"
+        href="https://www.facebook.com/The-Mad-Mr-Daab-106990617730086/?view_public_for=106990617730086"
         icon={<FacebookOption color="brand" />}
       />
       <Anchor
         a11yTitle="Follow us on Twitter"
-        href="https://twitter.com/"
+        href="https://twitter.com/MrDaab"
         icon={<Twitter color="brand" />}
       />
     </Box>
