@@ -8,16 +8,17 @@ import {
 import "./styles/Home.css";
 import BlogsVisual from "../containers/VisualBlogs"
 import BlogsVisual2 from "../containers/VisualBlogs2";
-
-import "./styles/Blog.css"
 import BlogsVisual3 from "../containers/VisualBlogs3";
+import urls from "../assets/resources/imageURLs"
+
+
+import "./styles/Blog.css";
 
 
 export default function BlogPage() {
-  const image1 = require('../assets/resources/img/galaxy2.jpg');
-  const myLogo = require('../assets/resources/img/MyLOGO.png');
-  const peaceSymb = require('../assets/resources/img/peace-symbol.jpg')
-  const serverlessImage = require('../assets/resources/img/Serverless.PNG')
+  const serverlessImage = require('../assets/resources/img/Serverless.PNG');
+  const myImage = require('../assets/resources/img/MyLOGO.png');
+  const peaceImage = require('../assets/resources/img/peace-symbol.jpg');
 
   function displayBlogs() {
     return (
@@ -32,7 +33,7 @@ export default function BlogPage() {
             <div class="row card__padding" style={{display: "flex", marginLeft: "10px"}}>
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src={image1} height="200" alt="galaxy" class="border-tlr-radius"/>
+                <img src={myImage} height="200" alt="galaxy" class="border-tlr-radius"/>
                     </div>
 
               <div class="card__content card__padding">
@@ -52,7 +53,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={myLogo} width="50" height= "50" alt="user" id="myImage"/>
+                  <img src={myImage} width="50" height= "50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -78,7 +79,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={myLogo} width="50" height="50" alt="user" id="myImage"/>
+                  <img src={myImage} width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
@@ -89,7 +90,7 @@ export default function BlogPage() {
             {/* Blog3 */}
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src={peaceSymb} height="200" alt="me" class="border-tlr-radius"/>
+                <img src={myImage} height="200" alt="me" class="border-tlr-radius"/>
               </div>
               <div class="card__content card__padding">
                 <div class="card__meta">
@@ -104,7 +105,7 @@ export default function BlogPage() {
               </div>
               <div class="card__action">
                 <div class="card__author">
-                  <img src={myLogo} width="50" height="50" alt="user" id="myImage"/>
+                  <img src={myImage} width="50" height="50" alt="user" id="myImage"/>
                   <div class="card__author-content">
                     By <a href="/home">Mr. Daab</a>
                   </div>
