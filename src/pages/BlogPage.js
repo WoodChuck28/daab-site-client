@@ -9,11 +9,8 @@ import "./styles/Home.css";
 import BlogsVisual from "../containers/VisualBlogs"
 import BlogsVisual2 from "../containers/VisualBlogs2";
 import BlogsVisual3 from "../containers/VisualBlogs3";
-import urls from "../assets/resources/imageURLs"
-
 
 import "./styles/Blog.css";
-
 
 export default function BlogPage() {
   const serverlessImage = require('../assets/resources/img/Serverless.PNG');
@@ -90,7 +87,7 @@ export default function BlogPage() {
             {/* Blog3 */}
             <div class="card radius shadowDepth1" style={{maxWidth: "300px", margin: "20px"}}>
               <div class="card__image border-tlr-radius">
-                <img src={myImage} height="200" alt="me" class="border-tlr-radius"/>
+                <img src={peaceImage} height="200" alt="me" class="border-tlr-radius"/>
               </div>
               <div class="card__content card__padding">
                 <div class="card__meta">
