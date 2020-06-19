@@ -1,8 +1,5 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.PNG filter=lfs diff=lfs merge=lfs -text
-<<<<<<< HEAD
 src/assets/resources/img/** filter=lfs diff=lfs merge=lfs -text
-=======
->>>>>>> 8211a7741fa95c2a5102411eea24e4f8f903cb62
 *.gif filter=lfs diff=lfs merge=lfs -text
